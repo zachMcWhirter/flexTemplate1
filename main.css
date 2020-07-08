@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+ 
+  .outer-col-2 {
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+    border: gold 7px solid;
+  }
+  .inner-col {
+    flex: 4;
+    border: black 7px solid;
+  }
+  header {
+  	border: green 7px dashed; 
+    height: 20vh;
+  }
+  .inner-row #friends {
+    min-height: 20vh;
+    border: hotpink 7px dashed; 
+  }
+  .inner-row #news {
+    min-height: 20vh;
+    border: purple 7px dashed;
+  }
+  .inner-row #events {
+    min-height: 20vh;
+    border: yellowgreen 7px dashed;
+  }
+  
+  .inner-row #tasks {
+  	border: blue 7px dashed; 
+    height: 20vh;
+  }
+
+  aside {
+    flex: 1.5;
+    border: red 7px dashed;
+  }
+
+  header, footer, article, nav, aside, section {
+    padding: 1em;
+  }
