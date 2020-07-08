@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Open+Sans+Condensed:wght@700&family=Squada+One&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>Header</header>
+    <div class="header__container">
+        <div class="header">
+            <img src="https://images.freeimages.com/images/small-previews/be1/acorn-1635444.jpg" alt="logo" />
+            <h1><u>NutShell</u></h1>
+
+        </div>
+    </div>
 
     <div class="outer-col-2">
         <div class="inner-row">
@@ -19,7 +27,28 @@
                 <section id="events" class="inner-row">Events</section>
                 <section id="tasks" class="inner-row">Tasks</section>
             </div>
-            <aside id="messaging" >Chat Messaging</aside>
+            <aside id="messaging" >
+                <div class="outerChat___Container">
+                    <div id="chatH2__container">
+                        <h2 id="chatH2">Chat Messaging</h2>
+                    </div>
+                    <section class="postedMessage__Container">
+                        <!--renderMessageToDom will go here-->
+                    </section>
+                    <form id="message__Form" action="">
+                        <input type="hidden" id="messageId" value="" />
+                        <label for="chat__Message"></label>
+                        <textarea placeholder="Your Message Here..." name="newMessage" class="input__field"
+                            id="newMessageContent" maxlength="150" cols="50" rows="2"></textarea>
+
+                    </form>
+
+                    <article class="newMessage__Container">
+                        <button type="button" id="sendMessageButton">Send Message</button>
+                    </article>
+
+                </div>
+            </aside>
         </div>
     </div>
 
